@@ -8610,14 +8610,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D2" library="adafruit" deviceset="DIODE" device="_SOD-123FL"/>
 <part name="U3" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Yellow"/>
-<part name="LED2" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Yellow"/>
-<part name="LED3" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Green"/>
-<part name="LED4" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Red"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="330"/>
-<part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="330"/>
-<part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="330"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="330"/>
+<part name="RX" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Yellow"/>
+<part name="TX" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Yellow"/>
+<part name="STATUS" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Green"/>
+<part name="ERROR" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="Red"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="100"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="100"/>
+<part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="100"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="100"/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8681,10 +8681,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D2" gate="G$1" x="226.06" y="78.74" rot="R270"/>
 <instance part="U3" gate="G$1" x="246.38" y="68.58"/>
 <instance part="JP1" gate="A" x="20.32" y="109.22" rot="R180"/>
-<instance part="LED1" gate="G$1" x="12.7" y="33.02"/>
-<instance part="LED2" gate="G$1" x="22.86" y="33.02"/>
-<instance part="LED3" gate="G$1" x="33.02" y="33.02"/>
-<instance part="LED4" gate="G$1" x="43.18" y="33.02"/>
+<instance part="RX" gate="G$1" x="12.7" y="33.02"/>
+<instance part="TX" gate="G$1" x="22.86" y="33.02"/>
+<instance part="STATUS" gate="G$1" x="33.02" y="33.02"/>
+<instance part="ERROR" gate="G$1" x="43.18" y="33.02"/>
 <instance part="R4" gate="G$1" x="12.7" y="20.32" rot="R90"/>
 <instance part="R5" gate="G$1" x="22.86" y="20.32" rot="R90"/>
 <instance part="R6" gate="G$1" x="33.02" y="20.32" rot="R90"/>
@@ -9274,7 +9274,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 <wire x1="12.7" y1="35.56" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
 <label x="12.7" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -9286,7 +9286,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="152.4" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="35.56" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <label x="22.86" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -9298,7 +9298,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="STATUS" gate="G$1" pin="A"/>
 <wire x1="33.02" y1="35.56" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <label x="33.02" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -9310,7 +9310,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="ERROR" gate="G$1" pin="A"/>
 <wire x1="43.18" y1="35.56" x2="43.18" y2="38.1" width="0.1524" layer="91"/>
 <label x="43.18" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -9318,28 +9318,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$3" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="RX" gate="G$1" pin="C"/>
 <wire x1="12.7" y1="25.4" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="25.4" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="STATUS" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="25.4" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="ERROR" gate="G$1" pin="C"/>
 <wire x1="43.18" y1="27.94" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
