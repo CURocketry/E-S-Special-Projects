@@ -1,5 +1,7 @@
 # E&S Special Projects
 This is where all the non-payload or research related E&S projects go. Below you can find a list and short description of all projects in this repo. 
+## Airbrake
+All E&S work on the airbrake project. 
 ## ES Datalogger
 All purpose datalogger for model rockets. Logs data from a 9-DoF IMU and altimeter and saves it to an SD card. Powered by a 3.7V LiPo battery.
 ## SAMD21 Minimal
